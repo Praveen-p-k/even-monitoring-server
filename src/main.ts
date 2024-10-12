@@ -67,7 +67,6 @@ async function bootstrap() {
       transform: true,
     }),
   );
-  app.setGlobalPrefix(configVars.APP_BACKEND_PREFIX);
 
   /** SWAGGER */
   const config = new DocumentBuilder()
