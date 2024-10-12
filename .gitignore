@@ -146,3 +146,4 @@ docker-compose.override.yml
 
 # Type Doc
 code-docs
+.vercel
