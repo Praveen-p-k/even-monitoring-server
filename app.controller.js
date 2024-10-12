@@ -18,7 +18,7 @@ let AppController = class AppController {
 };
 exports.AppController = AppController;
 __decorate([
-    (0, common_1.Get)('/health-check'),
+    (0, common_1.Get)('/health'),
     (0, common_1.HttpCode)(common_1.HttpStatus.OK),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
