@@ -53,7 +53,6 @@ async function bootstrap() {
         forbidNonWhitelisted: true,
         transform: true,
     }));
-    app.setGlobalPrefix(config_1.config.APP_BACKEND_PREFIX);
     const config = new swagger_1.DocumentBuilder()
         .setTitle('Event monitoring APIs')
         .setDescription('Blockchain event monitoring APIs')
