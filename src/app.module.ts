@@ -6,6 +6,7 @@ import { AppService } from 'src/app.service';
 import { NoCacheMiddleware } from 'src/shared-kernel/middlewares/cache-control.middleware';
 import { EventNotificationsModule } from 'src/notification-management/event-notification.module';
 import { config } from 'src/config';
+import { GoogleDriveModule } from './g-drive/g-drive.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { config } from 'src/config';
       isGlobal: true,
     }),
     EventNotificationsModule,
+    GoogleDriveModule,
   ],
   controllers: [AppController],
   providers: [AppService],

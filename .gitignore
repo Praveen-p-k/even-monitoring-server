@@ -39,6 +39,10 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
+/service-account-key.json
+src/g-drive/service-account-key.json
+src/g-drive/credentials.json
+
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
