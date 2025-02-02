@@ -15,6 +15,7 @@ const app_service_1 = require("./app.service");
 const cache_control_middleware_1 = require("./shared-kernel/middlewares/cache-control.middleware");
 const event_notification_module_1 = require("./notification-management/event-notification.module");
 const config_2 = require("./config");
+const g_drive_module_1 = require("./g-drive/g-drive.module");
 let AppModule = class AppModule {
     configure(consumer) {
         consumer.apply(cache_control_middleware_1.NoCacheMiddleware).forRoutes('*');
@@ -29,6 +30,7 @@ exports.AppModule = AppModule = __decorate([
                 isGlobal: true,
             }),
             event_notification_module_1.EventNotificationsModule,
+            g_drive_module_1.GoogleDriveModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
